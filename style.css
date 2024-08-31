@@ -20,13 +20,16 @@ body {
 }
 
 #nav {
-    height: 14vh;
+    height: 12vh;
     width: 100vw;
     display: flex;
     align-items: center;
     /* justify-content: ; */
     gap: 2vw;
-
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgb(235, 234, 234);
 }
 
 #nav img {
@@ -41,6 +44,7 @@ body {
     color: black;
     font-size: 1.2vw;
     text-transform: capitalize;
+    cursor: pointer;
 }
 
 #nav #btn-1 {
@@ -51,6 +55,7 @@ body {
     border-radius: 0.2vw;
     background-color: #B80E5A;
     color: white;
+    cursor: pointer;
 }
 
 #nav #btn-2 {
@@ -61,6 +66,7 @@ body {
     border-radius: 0.2vw;
     background-color: #04615B;
     color: white;
+    cursor: pointer;
 }
 
 #page1 {
@@ -112,12 +118,16 @@ body {
 #page2 {
     height: 80vh;
     width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 #page2 video {
     width: 100%;
-    height: 100%;
-    background-size: cover;
+    height: auto;
+    max-height: 100%;
     object-fit: cover;
 }
 
@@ -346,27 +356,31 @@ th {
     text-align: left;
     padding: 10px;
 }
-#page7-content-3{
+
+#page7-content-3 {
     margin-top: 2vw;
 }
 
-#page7-content-3 ol{
+#page7-content-3 ol {
     color: white;
     padding: 4vw 5vw;
 }
-#page7-content-3 ol li{
+
+#page7-content-3 ol li {
     font-size: 1.2vw;
 }
 
-#page8{
+#page8 {
     height: 80vh;
-    width: 100vw;   
+    width: 100vw;
 }
-#page8 h1{
+
+#page8 h1 {
     text-align: center;
     margin-top: 3.4vw;
     font-size: 4vw;
 }
+
 /* Table Styling */
 #page8 table {
     width: 50%;
@@ -378,7 +392,8 @@ th {
 
 }
 
-#page8 th, td {
+#page8 th,
+td {
     padding: 10px;
     text-align: left;
     border: 1px solid #ddd;
@@ -401,3 +416,327 @@ th {
     background-color: #f9f9f9;
 }
 
+#page8 #btn-1 {
+    margin-left: 45%;
+    margin-top: 2.5vw;
+    padding: 1vw 2vw;
+    border-radius: 0.4vw;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    background-color: #B80E5A;
+    color: white;
+    font-weight: bold;
+}
+
+#pg8-c {
+    padding: 5vw 10vw;
+}
+
+/* स्क्रीन की चौड़ाई 768px या उससे कम */
+@media only screen and (max-width: 768px) {
+    #nav {
+        height: auto;
+        padding: 5vw 4vw;
+    }
+
+    #nav img {
+        height: 3vw;
+        padding: 0;
+    }
+
+    #nav a {
+        margin-left: 2vw;
+        font-size: 2.4vw;
+    }
+
+    #nav #btn-1,
+    #nav #btn-2 {
+        padding: 1.3vw 1.3vw;
+        font-size: 1.5vw;
+        margin-left: auto;
+    }
+
+    /* Adjust the gap between elements for smaller screens */
+    #nav {
+        gap: 1vw;
+    }
+
+    #page1 {
+        height: 75vh;
+        width: 100vw;
+        background-color: #0C1439;
+        text-align: center;
+    }
+
+    #page1 h1 {
+        padding-top: 20vw;
+        font-size: 10vw;
+    }
+
+    #page1 h2 {
+        font-size: 4vw;
+
+        margin-top: 3vw;
+    }
+
+    #page1 h3 {
+        font-size: 4vw;
+
+        margin-top: 3vw;
+    }
+
+    #page1-btn-1,
+    #page1-btn-2 {
+        padding: 2vw 3vw;
+        font-size: 3vw;
+        margin-top: 10vw;
+    }
+
+    #page2 {
+        height: 70vh;
+        /* Adjust height for smaller screens */
+    }
+
+    #page2 video {
+        height: 100%;
+        width: auto;
+
+    }
+
+
+
+    #page3 {
+        min-height: 120vh;
+        width: 100vw;
+        background-color: #0C1439;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #page3 #left {
+        width: 100%;
+        height: 100vh;
+        padding: 5vw 5vw;
+    }
+
+    #page3 #left h1 {
+        color: white;
+        font-size: 12vw;
+        padding: 5vw 5vw;
+        margin-bottom: 1vw;
+        text-align: center;
+    }
+
+    #page3 #left p {
+        color: white;
+        font-size: 2.8vw;
+        text-align: justify;
+    }
+
+    #page3 #right {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 100vh;
+        margin-bottom: 5vw;
+        margin-top: -10vw;
+    }
+
+    #page3 #right img {
+        width: 95%;
+        height: 70%;
+        background-size: cover;
+        object-fit: cover;
+        margin-top: 12vw;
+    }
+
+
+
+    #page4 {
+        height: 50vh;
+        width: 100vw;
+        background-color: #0c1439;
+        /* position: relative; */
+        padding-top: 5vw;
+    }
+
+    #page4 h1 {
+        align-items: center;
+        text-align: center;
+        padding-top: 8vw;
+        /* padding-bottom: 5vw; */
+        font-size: 10vw;
+        color: white;
+        text-transform: capitalize;
+        text-decoration: underline;
+    }
+
+    #page4 #box {
+        display: flex;
+        gap: 2vw;
+        margin-top: 10vw;
+
+    }
+
+
+    #page-4-box-1 h1 {
+        font-size: 3vw;
+        /* margin-top: -7vw; */
+        text-decoration: none;
+    }
+
+    #page-4-box-1 h1 span {
+        font-size: 2vw;
+        color: black;
+    }
+
+    #page4-box1 {
+        border: 2px solid;
+        padding: 1vw 5vw;
+        margin-top: 5vw;
+        background-color: white;
+        border: none;
+        border-radius: 0.9vw;
+    }
+
+    #page4-box1 h1 {
+        font-size: 2vw;
+        color: rgba(0, 0, 0, 0.773);
+        text-align: center;
+    }
+
+
+    #page5 h2 {
+        text-align: center;
+        color: white;
+        padding-top: 5vw;
+        font-size: 10vw;
+        border-top: 2px solid;
+    }
+
+    #page5 p {
+        color: white;
+        margin-top: 1vw;
+        text-align: justify;
+        padding: 5vw 4vw;
+    }
+
+    #page5 #images {
+        display: flex;
+        justify-content: space-between;
+        padding: 5vw 5vw;
+
+    }
+    #page5 h1{
+        font-size: 8vw;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+    }
+    #page5 li{
+        text-align: justify;
+        padding: 1vw 6vw;
+
+    }
+    #page5 #images img {
+        height: 18vw;
+        width: 20vw;
+    }
+
+    #page6 {
+        min-height: 120vh;
+        width: 100vw;
+        background-image: url("https://img.freepik.com/premium-vector/realistic-golden-confetti-background_23-2148980133.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        margin-top: -2vw;
+
+    }
+
+    #page6 h1 {
+        text-align: center;
+        padding-top: 5vw;
+        font-size: 10vw;
+    }
+
+    #page6 p {
+        font-size: 5vw;
+        color: #04615B;
+        text-align: center;
+        padding-top: 4vw;
+        padding-bottom: 2vw;
+        font-weight: 500;
+    }
+
+    #page6 #content {
+        padding: 5vw 5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5vw;
+    }
+
+    #page6 #content #box {
+        border: 2px solid black;
+        width: 80vw;
+        background-color: #5D97D1;
+        border: none;
+        padding: 5vw;
+        border-radius: 0.9vw;
+    }
+
+    #page6 #content #box h2 {
+        font-size: 2.2vw;
+        color: rgba(0, 0, 0, 0.789);
+    }
+
+    #page6 #content #box h2 span {
+        font-size: 3vw;
+        color: black;
+    }
+
+    #page6 #content ul {
+        padding: 0 2vw;
+    }
+
+    #page7 h1 {
+        font-size: 7vw;
+        padding-top: 8vw;
+    }
+
+
+    #page7-content {
+        display: flex;
+        padding: 10vw 7vw;
+        color: white;
+        font-size: 3vw;
+    }
+
+
+    #page7-content-2 table {
+        width: 90%;
+    }
+
+    #page7-content-3 ol li {
+        font-size: 3vw;
+        padding: 1vw 5vw;
+        text-align: justify;
+    }
+
+    #page8 h1 {
+        font-size: 8vw;
+    }
+
+    #page8 table {
+        width: 80%;
+    }
+
+    #page8 #btn-1 {
+        margin-left: 30%;
+    }
+    #pg8-c{
+        text-align: justify;
+    }
+}
