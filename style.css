@@ -8,8 +8,8 @@ html,
 body {
     height: 100%;
     width: 100%;
-    /* font-family: gilroy; */
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: gilroy;
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
@@ -451,22 +451,33 @@ td {
     }
 
     #nav img {
-        height: 5vw;
+        height: 7vw;
         padding-top: 2.3vw;
     }
 
 
     #nav a {
         /* margin-left: 2vw; */
-        font-size: 1.9vw;
+        font-size: 2.5vw;
+        /* z-index: 0; */
+        visibility: hidden;
 
+    }
+
+    #nav-btn {
+        margin-right: 5vw;
+        display: flex;
+        align-items: center;
     }
 
     #nav #btn-1,
     #nav #btn-2 {
-        padding: 1vw 1vw;
-        font-size: 1vw;
-        margin-left: auto;
+        padding: 1.6vw 3vw;
+        font-size: 2vw;
+        /* margin-left: auto; */
+        /* margin-right: 1vw; */
+        border-radius: 1vw;
+
     }
 
     #nav {
@@ -497,7 +508,7 @@ td {
         margin-top: 3vw;
     }
 
-    #page1 #btn-1{
+    #page1 #btn-1 {
         padding: 2vw 5vw;
         font-size: 2.8vw;
         margin-top: 10vw;
@@ -657,7 +668,8 @@ td {
         height: 18vw;
         width: 20vw;
     }
-    #page5 p{
+
+    #page5 p {
         font-size: 3vw;
         text-align: justify;
     }
@@ -719,7 +731,7 @@ td {
 
     #page6 #content ul {
         padding: 0 2vw;
-        font-size: 3vw;
+        font-size: 2.5vw;
     }
 
     #page7 h1 {
